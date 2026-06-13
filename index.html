@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聚泓阁本帮菜 | 杭州味道·匠心传承</title>
+    <meta name="description" content="聚泓阁本帮菜——传承经典杭州味道，以匠心烹制每一道本帮佳肴。">
+    <link rel="icon" type="image/png" href="images/logo_clean.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ========== 导航栏 ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#home" class="logo">
+                <img src="images/logo_clean.png" alt="聚泓阁本帮菜" class="logo__img">
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link nav__link--active">首页</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">关于我们</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">招牌菜品</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">环境展示</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">联系我们</a></li>
+                </ul>
+            </nav>
+            <button class="nav__toggle" id="navToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== 首页英雄区 ========== -->
+        <section class="hero" id="home">
+            <div class="hero__bg"></div>
+            <div class="hero__overlay"></div>
+            <div class="container hero__content">
+                <!-- Logo 主体视觉 -->
+                <div class="hero__emblem">
+                    <img src="images/logo_clean.png" alt="聚泓阁" class="hero__emblem-img">
+                    <div class="hero__emblem-glow"></div>
+                </div>
+                <p class="hero__supertitle">杭州味道 · 匠心传承</p>
+                <p class="hero__desc">
+                    以时令之鲜，烹一席杭州<br>
+                    用匠心之火，续百年本帮
+                </p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">预约订座</a>
+                    <a href="#menu" class="btn btn--outline">探索菜品</a>
+                </div>
+                <div class="hero__scroll">
+                    <span>向下探索</span>
+                    <div class="hero__scroll-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 关于我们 ========== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">关于我们</span>
+                    <h2 class="section__title">一家有温度的本帮菜馆</h2>
+                    <p class="section__subtitle">传承不守旧，创新不忘本</p>
+                </div>
+                <div class="about__grid">
+                    <div class="about__image">
+                        <div class="about__image-frame">
+                            <div class="about__image-placeholder">
+                                <span>餐厅内景</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__text">
+                        <h3>聚八方之味，泓本帮之粹</h3>
+                        <p>
+                            聚泓阁坐落于杭州，是一家专注于本帮菜传承与创新的精品餐厅。
+                            我们深信，真正的本帮味道，不在于调料的堆砌，而在于对食材本味的尊重与火候的精准拿捏。
+                        </p>
+                        <p>
+                            餐厅由资深本帮菜大厨主理，坚持"浓油赤酱不失其本，醇厚鲜美不掩其真"的烹饪理念，
+                            用心还原老杭州人记忆中的味道，同时赋予传统菜肴更精致的当代表达。
+                        </p>
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <span class="about__feature-icon">🍽</span>
+                                <div>
+                                    <strong>时令食材</strong>
+                                    <span>顺应四时，只选当季最新鲜的食材</span>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <span class="about__feature-icon">🔥</span>
+                                <div>
+                                    <strong>匠心烹饪</strong>
+                                    <span>老师傅掌勺，每一道菜都是功夫</span>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <span class="about__feature-icon">🏮</span>
+                                <div>
+                                    <strong>雅致环境</strong>
+                                    <span>海派风情与现代简约的完美融合</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 招牌菜品 ========== -->
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">招牌菜品</span>
+                    <h2 class="section__title">主厨推荐 · 本帮经典</h2>
+                    <p class="section__subtitle">每一道都是聚泓阁的诚意之作</p>
+                </div>
+                <div class="menu__grid">
+                    <!-- 菜品1 -->
+                    <div class="menu__card">
+                        <div class="menu__card-image">
+                            <img src="images/dishes/cuirupige.jpg" alt="脆皮乳鸽" loading="lazy">
+                            <div class="menu__card-badge">招牌</div>
+                        </div>
+                        <div class="menu__card-body">
+                            <h3>脆皮乳鸽</h3>
+                            <p>精选妙龄乳鸽，皮脆如琉璃，肉嫩而多汁，一撕就爆汁</p>
+                            <span class="menu__card-price">¥58<span class="menu__card-unit">/只</span></span>
+                        </div>
+                    </div>
+                    <!-- 菜品2 -->
+                    <div class="menu__card">
+                        <div class="menu__card-image">
+                            <img src="images/dishes/liangtouwu.jpg" alt="金华两头乌配双色夹馍" loading="lazy">
+                            <div class="menu__card-badge">经典</div>
+                        </div>
+                        <div class="menu__card-body">
+                            <h3>金华两头乌配双色夹馍</h3>
+                            <p>金华两头乌五花慢炖至酥烂，配天然发酵双色夹馍，肥而不腻</p>
+                            <span class="menu__card-price">¥98<span class="menu__card-unit">/份</span></span>
+                        </div>
+                    </div>
+                    <!-- 菜品3 -->
+                    <div class="menu__card">
+                        <div class="menu__card-image">
+                            <img src="images/dishes/niuganjunjiayu.jpg" alt="牛肝菌闷千岛湖甲鱼" loading="lazy">
+                            <div class="menu__card-badge">时令</div>
+                        </div>
+                        <div class="menu__card-body">
+                            <h3>牛肝菌闷千岛湖甲鱼</h3>
+                            <p>千岛湖生态甲鱼，云南野生牛肝菌同焖，胶质丰腴菌香交融</p>
+                            <span class="menu__card-price">¥398<span class="menu__card-unit">/份</span></span>
+                        </div>
+                    </div>
+                    <!-- 菜品4 -->
+                    <div class="menu__card">
+                        <div class="menu__card-image">
+                            <img src="images/dishes/jiangdanhaixiansigua.jpg" alt="姜蛋海鲜丝瓜" loading="lazy">
+                        </div>
+                        <div class="menu__card-body">
+                            <h3>姜蛋海鲜丝瓜</h3>
+                            <p>嫩姜煎蛋吊出鲜汤底，时令丝瓜配时鲜小海鲜，清鲜回甘</p>
+                            <span class="menu__card-price">¥88<span class="menu__card-unit">/份</span></span>
+                        </div>
+                    </div>
+                    <!-- 菜品5 -->
+                    <div class="menu__card">
+                        <div class="menu__card-image">
+                            <img src="images/dishes/haidanshigudoufu.jpg" alt="海胆石锅豆腐" loading="lazy">
+                            <div class="menu__card-badge">人气</div>
+                        </div>
+                        <div class="menu__card-body">
+                            <h3>海胆石锅豆腐</h3>
+                            <p>滚烫石锅现烹，嫩豆腐吸入海胆鲜甜，锅气十足暖心落胃</p>
+                            <span class="menu__card-price">¥88<span class="menu__card-unit">/份</span></span>
+                        </div>
+                    </div>
+                    <!-- 菜品6 -->
+                    <div class="menu__card">
+                        <div class="menu__card-image">
+                            <img src="images/dishes/jiemoxiaqiu.jpg" alt="芥末虾球" loading="lazy">
+                        </div>
+                        <div class="menu__card-body">
+                            <h3>芥末虾球</h3>
+                            <p>大颗手剥虾仁裹薄浆轻炸，芥末蛋黄酱微辛回甜，外酥里弹</p>
+                            <span class="menu__card-price">¥98<span class="menu__card-unit">/份</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__cta">
+                    <a href="#contact" class="btn btn--primary">查看完整菜单</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 环境展示 ========== -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">环境展示</span>
+                    <h2 class="section__title">雅致空间 · 海派风情</h2>
+                    <p class="section__subtitle">在舒适的环境中品味正宗本帮味道</p>
+                </div>
+                <div class="gallery__grid">
+                    <div class="gallery__item gallery__item--tall">
+                        <div class="gallery__placeholder">
+                            <span>大堂</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>大厅</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>卡座</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item gallery__item--wide">
+                        <div class="gallery__placeholder">
+                            <span>包厢</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>细节</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item gallery__item--tall">
+                        <div class="gallery__placeholder">
+                            <span>露台</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 联系我们 ========== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">联系我们</span>
+                    <h2 class="section__title">期待您的光临</h2>
+                    <p class="section__subtitle">欢迎致电预约，享受更佳的用餐体验</p>
+                </div>
+                <div class="contact__cards">
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3>餐厅地址</h3>
+                        <p>杭州市余杭区金昌路2065号</p>
+                        <p class="contact__card-sub">聚泓阁二楼（龙吟大酒店正门电梯上）</p>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3>订座电话</h3>
+                        <p><a href="tel:15858232377" class="contact__phone-link">158-5823-2377</a></p>
+                        <p class="contact__card-sub">欢迎致电咨询或预约</p>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>营业时间</h3>
+                        <p>午餐 10:30 - 13:30</p>
+                        <p>晚餐 16:30 - 21:30</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== 页脚 ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/logo_clean.png" alt="聚泓阁" class="footer__logo-img">
+                    <p>传承经典杭州味道，以匠心烹制每一道本帮佳肴。</p>
+                </div>
+                <div class="footer__links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#menu">招牌菜品</a></li>
+                        <li><a href="#gallery">环境展示</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">大众点评</a></li>
+                        <li><a href="#">小红书</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4>营业时间</h4>
+                    <p>午餐：10:30 - 13:30</p>
+                    <p>晚餐：16:30 - 21:30</p>
+                    <p class="footer__phone">订座：158-5823-2377</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 聚泓阁本帮菜 · 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
