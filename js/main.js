@@ -289,6 +289,11 @@ function initMenuModal() {
         e.preventDefault();
         modal.classList.add('menu-modal--open');
         document.body.style.overflow = 'hidden';
+        // 图片延迟加载（点击时才加载，节省首次加载带宽）
+        const img = document.getElementById('menuImg');
+        if (img && img.dataset.src && !img.src) {
+            img.src = img.dataset.src;
+        }
     });
 
     // 关闭弹窗
