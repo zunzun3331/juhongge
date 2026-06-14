@@ -247,10 +247,9 @@ document.head.appendChild(formMsgStyles);
 function initQrModal() {
     const trigger = document.getElementById('qrTrigger');
     const modal = document.getElementById('qrModal');
+    if (!trigger || !modal) return;
     const close = document.getElementById('qrClose');
     const backdrop = modal.querySelector('.qr-modal__backdrop');
-
-    if (!trigger || !modal) return;
 
     // 点击链接打开弹窗
     trigger.addEventListener('click', function(e) {
