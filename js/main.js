@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollSpy();
     initScrollAnimations();
     initReservationForm();
+    initQrModal();
 });
 
 /* ---------- 滚动时导航栏样式切换 ---------- */
@@ -241,3 +242,36 @@ formMsgStyles.textContent = `
     }
 `;
 document.head.appendChild(formMsgStyles);
+
+/* ---------- 微信二维码弹窗 ---------- */
+function initQrModal() {
+    const trigger = document.getElementById('qrTrigger');
+    const modal = document.getElementById('qrModal');
+    const close = document.getElementById('qrClose');
+    const backdrop = modal.querySelector('.qr-modal__backdrop');
+
+    if (!trigger || !modal) return;
+
+    // 点击链接打开弹窗
+    trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.classList.add('qr-modal--open');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // 关闭弹窗
+    function closeModal() {
+        modal.classList.remove('qr-modal--open');
+        document.body.style.overflow = '';
+    }
+
+    close.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+
+    // ESC 关闭
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('qr-modal--open')) {
+            closeModal();
+        }
+    });
+}

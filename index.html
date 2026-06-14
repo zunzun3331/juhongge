@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聚泓阁本帮菜 | 杭州味道·匠心传承</title>
-    <meta name="description" content="聚泓阁本帮菜——传承经典杭州味道，以匠心烹制每一道本帮佳肴。">
+    <title>聚泓阁本帮菜 | 贵有宾朋客，宴在聚泓阁</title>
+    <meta name="description" content="聚泓阁本帮菜——贵有宾朋客，宴在聚泓阁——品味杭州本帮味道。">
     <link rel="icon" type="image/png" href="images/logo_clean.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,12 +39,20 @@
             <div class="hero__bg"></div>
             <div class="hero__overlay"></div>
             <div class="container hero__content">
-                <!-- Logo 主体视觉 -->
-                <div class="hero__emblem">
-                    <img src="images/logo_clean.png" alt="聚泓阁" class="hero__emblem-img">
-                    <div class="hero__emblem-glow"></div>
+                <!-- Logo 主体视觉 + 对联 -->
+                <div class="hero__emblem-wrap">
+                    <div class="hero__couplet hero__couplet--left">
+                        <span>甄</span><span>选</span><span>有</span><span>机</span><span>食</span><span>材</span>
+                    </div>
+                    <div class="hero__emblem">
+                        <img src="images/logo_clean.png" alt="聚泓阁" class="hero__emblem-img">
+                        <div class="hero__emblem-glow"></div>
+                    </div>
+                    <div class="hero__couplet hero__couplet--right">
+                        <span>烹</span><span>饪</span><span>健</span><span>康</span><span>美</span><span>食</span>
+                    </div>
                 </div>
-                <p class="hero__supertitle">杭州味道 · 匠心传承</p>
+                <p class="hero__supertitle">贵有宾朋客，宴在聚泓阁</p>
                 <p class="hero__desc">
                     以时令之鲜，烹一席杭州<br>
                     用匠心之火，续百年本帮
@@ -52,10 +60,6 @@
                 <div class="hero__actions">
                     <a href="#contact" class="btn btn--primary">预约订座</a>
                     <a href="#menu" class="btn btn--outline">探索菜品</a>
-                </div>
-                <div class="hero__scroll">
-                    <span>向下探索</span>
-                    <div class="hero__scroll-line"></div>
                 </div>
             </div>
         </section>
@@ -257,8 +261,14 @@
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
                         <h3>餐厅地址</h3>
-                        <p>杭州市余杭区金昌路2065号</p>
+                        <p><a href="https://uri.amap.com/search?keyword=杭州市余杭区金昌路2065号聚泓阁" target="_blank" rel="noopener" class="contact__map-link">杭州市余杭区金昌路2065号</a></p>
                         <p class="contact__card-sub">聚泓阁二楼（龙吟大酒店正门电梯上）</p>
+                        <p class="contact__card-sub">
+                            <a href="https://uri.amap.com/search?keyword=杭州市余杭区金昌路2065号聚泓阁" target="_blank" rel="noopener" class="contact__nav-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="13.5 4 18.5 12 13.5 20 5.5 12"/></svg>
+                                点击导航
+                            </a>
+                        </p>
                     </div>
                     <div class="contact__card">
                         <div class="contact__card-icon">
@@ -266,7 +276,9 @@
                         </div>
                         <h3>订座电话</h3>
                         <p><a href="tel:15858232377" class="contact__phone-link">158-5823-2377</a></p>
-                        <p class="contact__card-sub">欢迎致电咨询或预约</p>
+                        <p class="contact__card-sub">
+                            <a href="#wechat-qr" class="contact__qr-link" id="qrTrigger">欢迎致电咨询或点击微信扫码</a>
+                        </p>
                     </div>
                     <div class="contact__card">
                         <div class="contact__card-icon">
@@ -287,7 +299,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <img src="images/logo_clean.png" alt="聚泓阁" class="footer__logo-img">
-                    <p>传承经典杭州味道，以匠心烹制每一道本帮佳肴。</p>
+                    <p>贵有宾朋客，宴在聚泓阁——品味杭州本帮味道。</p>
                 </div>
                 <div class="footer__links">
                     <h4>快速导航</h4>
@@ -302,9 +314,10 @@
                 <div class="footer__links">
                     <h4>关注我们</h4>
                     <ul>
-                        <li><a href="#">微信公众号</a></li>
-                        <li><a href="#">大众点评</a></li>
-                        <li><a href="#">小红书</a></li>
+                        <li><a href="https://v.douyin.com/HX_L_b69wMU/" target="_blank" rel="noopener">抖音</a></li>
+                        <li><a href="http://dpurl.cn/Ac6koEcz" target="_blank" rel="noopener">美团</a></li>
+                        <li><a href="https://m.dianping.com/shopinfo/l6VELerf0QlKDOzT" target="_blank" rel="noopener">大众点评</a></li>
+                        <li><a href="https://www.xiaohongshu.com/user/profile/66bafb39000000001d02037b" target="_blank" rel="noopener">小红书</a></li>
                     </ul>
                 </div>
                 <div class="footer__hours">
@@ -319,6 +332,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- 微信二维码弹窗 -->
+    <div class="qr-modal" id="qrModal">
+        <div class="qr-modal__backdrop"></div>
+        <div class="qr-modal__body">
+            <button class="qr-modal__close" id="qrClose">&times;</button>
+            <img src="images/qrcode.jpg" alt="聚泓阁微信二维码" class="qr-modal__img">
+            <p class="qr-modal__text">微信扫码咨询或预约</p>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

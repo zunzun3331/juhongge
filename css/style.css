@@ -318,23 +318,51 @@ ul {
 }
 
 .hero__supertitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     letter-spacing: 0.3em;
     color: var(--color-primary);
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
 /* Hero 徽章Logo — 主体视觉 */
+.hero__emblem-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 0 20px;
+}
+
+.hero__couplet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    line-height: 1.3;
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.hero__couplet span {
+    display: block;
+}
+
 .hero__emblem {
     position: relative;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .hero__emblem-img {
-    width: 260px;
+    width: 340px;
     height: auto;
     position: relative;
     z-index: 2;
@@ -360,8 +388,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(223, 194, 120, 0.25) 0%, rgba(245, 230, 200, 0.08) 50%, transparent 70%);
     z-index: 1;
@@ -388,10 +416,10 @@ ul {
 }
 
 .hero__desc {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     color: var(--color-text-light);
-    line-height: 2.2;
-    margin-bottom: 48px;
+    line-height: 2;
+    margin-bottom: 36px;
     letter-spacing: 0.06em;
 }
 
@@ -402,31 +430,6 @@ ul {
     flex-wrap: wrap;
 }
 
-.hero__scroll {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    letter-spacing: 0.1em;
-    animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-8px); }
-}
-
-.hero__scroll-line {
-    width: 1px;
-    height: 40px;
-    background: linear-gradient(to bottom, var(--color-primary), transparent);
-}
 
 /* =============================================
    ABOUT / 关于我们
@@ -749,6 +752,115 @@ ul {
     color: var(--color-primary-dark);
 }
 
+.contact__map-link {
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
+.contact__map-link:hover {
+    color: var(--color-primary);
+}
+
+.contact__nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact__nav-link:hover {
+    color: var(--color-primary-dark);
+    gap: 10px;
+}
+
+.contact__qr-link {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-border);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.contact__qr-link:hover {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+}
+
+/* QR Code Modal */
+.qr-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.qr-modal--open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.qr-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+}
+
+.qr-modal__body {
+    position: relative;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 40px 40px 32px;
+    text-align: center;
+    max-width: 380px;
+    width: 90%;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+    animation: modal-in 0.35s ease;
+}
+
+@keyframes modal-in {
+    from { transform: translateY(20px) scale(0.95); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.qr-modal__close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1;
+}
+
+.qr-modal__close:hover {
+    color: var(--color-text);
+}
+
+.qr-modal__img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.qr-modal__text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    letter-spacing: 0.05em;
+}
+
 /* =============================================
    FOOTER / 页脚
    ============================================= */
@@ -861,13 +973,22 @@ ul {
         --section-padding: 80px 0;
     }
 
+    .hero__emblem-wrap {
+        max-width: 780px;
+    }
+
+    .hero__couplet {
+        font-size: 1.4rem;
+        gap: 4px;
+    }
+
     .hero__emblem-img {
-        width: 220px;
+        width: 260px;
     }
 
     .hero__emblem-glow {
-        width: 260px;
-        height: 260px;
+        width: 300px;
+        height: 300px;
     }
 
     .menu__grid {
@@ -937,13 +1058,22 @@ ul {
     }
 
     /* Hero */
+    .hero__emblem-wrap {
+        max-width: 540px;
+    }
+
+    .hero__couplet {
+        font-size: 1.15rem;
+        gap: 2px;
+    }
+
     .hero__emblem-img {
-        width: 180px;
+        width: 200px;
     }
 
     .hero__emblem-glow {
-        width: 200px;
-        height: 200px;
+        width: 240px;
+        height: 240px;
     }
 
     .hero__desc {
@@ -999,13 +1129,22 @@ ul {
 }
 
 @media (max-width: 480px) {
+    .hero__emblem-wrap {
+        max-width: 380px;
+    }
+
+    .hero__couplet {
+        font-size: 0.9rem;
+        gap: 2px;
+    }
+
     .hero__emblem-img {
-        width: 150px;
+        width: 160px;
     }
 
     .hero__emblem-glow {
-        width: 170px;
-        height: 170px;
+        width: 180px;
+        height: 180px;
     }
 
     .hero__actions {
