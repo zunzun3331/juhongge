@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initReservationForm();
     initQrModal();
+    initMenuModal();
 });
 
 /* ---------- 滚动时导航栏样式切换 ---------- */
@@ -270,6 +271,38 @@ function initQrModal() {
     // ESC 关闭
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modal.classList.contains('qr-modal--open')) {
+            closeModal();
+        }
+    });
+}
+
+/* ---------- 完整菜单弹窗 ---------- */
+function initMenuModal() {
+    const trigger = document.getElementById('menuFullBtn');
+    const modal = document.getElementById('menuModal');
+    if (!trigger || !modal) return;
+    const close = document.getElementById('menuModalClose');
+    const backdrop = modal.querySelector('.menu-modal__backdrop');
+
+    // 点击按钮打开弹窗
+    trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.classList.add('menu-modal--open');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // 关闭弹窗
+    function closeModal() {
+        modal.classList.remove('menu-modal--open');
+        document.body.style.overflow = '';
+    }
+
+    close.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+
+    // ESC 关闭
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('menu-modal--open')) {
             closeModal();
         }
     });
